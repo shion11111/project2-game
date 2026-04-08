@@ -13,42 +13,30 @@
   
     <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script>
 
-    <script>
-  $( function() {
-
-    $( "#draggable" ).draggable({ revert: "valid" });
-    $( "#draggable2" ).draggable({ revert: "invalid" });
- 
-    $( "#droppable" ).droppable({
-      classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-      },
-      drop: function( event, ui ) {
-        $( this )
-          .addClass( "ui-state-highlight" )
-          .find( "p" )
-            .html( "Dropped!" );
-      }
-    });
-  } );
-  </script>
-
+    <script src="../scripts/game-script.js"></script>
 </head>
 
+
 <body>
-
-  <div id="draggable" class="ui-widget-content">
-    <p>I revert when I'm dropped</p>
-  </div>
  
-  <div id="draggable2" class="ui-widget-content">
-    <p>I revert when I'm not dropped</p>
-  </div>
- 
-  <div id="droppable" class="ui-widget-header">
-    <p>Drop me here</p>
-  </div>
+<div id="draggable" class="ui-widget-content">
+  <img src="../images/japan.png" alt="japan">
+</div>
 
+<div id="draggable2" class="ui-widget-content">
+  <img src="../images/germany.png" alt="germany">
+</div>
+
+<div id="draggable3" class="ui-widget-content">
+  <img src="../images/korea.webp" alt="korea">
+</div>
+ 
+<div id="droppable" class="ui-widget-header">
+  <p>japan</p>
+</div>
+
+<div id="status-message"></div>
+ 
+ 
 </body>
 </html>
