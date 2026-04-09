@@ -1,4 +1,17 @@
 $( function() {
+
+    // shuffle
+    var container = $(".draggable-container");
+    var flags = container.children();
+
+    // shuffle the array
+    flags.sort(function(){
+      return 0.5 -Math.random();
+    });
+
+    // put them back into the container
+    container.append(flags);
+
     // Japan flag stays if dropped in the box
     $( "#draggable" ).draggable({ revert: "invalid" });
 
