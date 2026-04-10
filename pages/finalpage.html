@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final page</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../scripts/score.js"></script>
+    <script>
+    // Call the function from your external file
+    window.onload = displayFinalResults;
+    </script>
+
+</head>
+<body>
+
+    <h1>Conglaturations! You have finished flags matching game😍</h1>
+
+    <div class="score-container">
+      <p>Best Score: <span id="current-score">0</span> / 5</p>
+      <p>All time Best: <span id="best-score">0</span></p>
+    </div>
+
+    <h2>Do you want to play again?</h2>
+
+     <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid">
+            <button type="button" class="btn btn-primary" onclick="localStorage.setItem('sessionScore', 0); window.location.href='../index.html'">
+            Go back to Home
+            </button>
+        </div>    
+     </nav>
+  
+
+</body>
+</html>

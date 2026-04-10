@@ -18,21 +18,37 @@ body {
 
 .navbar {
     display: flex;
+    justify-content: center;
     gap: 50px;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 50px 20px;
+    color: rgb(94, 78, 57);
+    padding: 20px;
     border-radius: 8px;
 }
 
+.nav-link {
+    color: rgb(94, 78, 57);
+    margin-right: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+
+}
+
+.me-3 {
+    color: rgb(94, 78, 57);
+    margin-right: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
 
 .btn {
     border: none;
     color: white;
-    padding: 14px 30px;
     cursor: pointer;
-    background-color: rgb(223, 188, 143);
-
-    
+    padding: 10px 30px;
+    background-color: rgb(94, 78, 57);
+    border-radius: 5px;
+    justify-content: center;
+ 
 }
 
 .draggable-container {
@@ -73,9 +89,3 @@ img {
     border: 2px dashed #888;
 }
 
-p {
-    font-weight: bold;
-    border: 3px #888;
-    padding: 5px;
-
-}
